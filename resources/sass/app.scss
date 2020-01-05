@@ -1,0 +1,30 @@
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// bootstrap-datepicker
+@import "~bootstrap-datepicker/dist/css/bootstrap-datepicker.css";
+
+// select2
+@import "~select2/dist/css/select2.min.css";
+@import "../css/select2-bootstrap.min.css";
+
+/*
+ * Message
+ */
+.message-wrap {
+    margin-top: 20px;
+}
+
+/*
+ * Breadcrumb
+ */
+.breadcrumb {
+    padding: 0.75rem 1rem 0 1rem;
+    background-color: transparent;
+}
+
+// datatable
+@import '~datatables.net-bs4/css/dataTables.bootstrap4.min.css';
