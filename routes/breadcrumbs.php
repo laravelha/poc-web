@@ -57,3 +57,27 @@ Breadcrumbs::for('categories.delete', function ($breadcrumbs, $category) {
    $breadcrumbs->parent('categories.show', $category);
    $breadcrumbs->push(Lang::get('categories.delete', ['category' => $category->id]), route('categories.delete', $category->id));
 });
+
+Breadcrumbs::for('posts.index', function ($breadcrumbs) {
+   $breadcrumbs->push(Lang::get('posts.index'), route('posts.index'));
+});
+
+Breadcrumbs::for('posts.create', function ($breadcrumbs) {
+   $breadcrumbs->parent('posts.index');
+   $breadcrumbs->push(Lang::get('posts.create'), route('posts.create'));
+});
+
+Breadcrumbs::for('posts.show', function ($breadcrumbs, $post) {
+   $breadcrumbs->parent('posts.index');
+   $breadcrumbs->push(Lang::get('posts.show', ['post' => $post->id]), route('posts.show', $post->id));
+});
+
+Breadcrumbs::for('posts.edit', function ($breadcrumbs, $post) {
+   $breadcrumbs->parent('posts.show', $post);
+   $breadcrumbs->push(Lang::get('posts.edit', ['post' => $post->id]), route('posts.edit', $post->id));
+});
+
+Breadcrumbs::for('posts.delete', function ($breadcrumbs, $post) {
+   $breadcrumbs->parent('posts.show', $post);
+   $breadcrumbs->push(Lang::get('posts.delete', ['post' => $post->id]), route('posts.delete', $post->id));
+});
