@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "429f400ab11e4f0f4195867ed2b38fb1",
+    "content-hash": "2bf1601c0e8136cf92250c3c3f88ceed",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3528,6 +3528,58 @@
                 "ui"
             ],
             "time": "2019-12-20T15:09:01+00:00"
+        },
+        {
+            "name": "laravelha/generator",
+            "version": "1.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravelha/generator.git",
+                "reference": "a696f7f0a94f8338348b4a120e3134829f72b58a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravelha/generator/zipball/a696f7f0a94f8338348b4a120e3134829f72b58a",
+                "reference": "a696f7f0a94f8338348b4a120e3134829f72b58a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "illuminate/console": "^6.0",
+                "illuminate/filesystem": "^6.0",
+                "illuminate/support": "^6.0",
+                "laravelha/support": "^1.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravelha\\Generator\\GeneratorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravelha\\Generator\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pedro Augusto",
+                    "email": "pedro.e@ufv.br"
+                }
+            ],
+            "description": "Laravelha Generator",
+            "keywords": [
+                "generator",
+                "laravel",
+                "rad"
+            ],
+            "time": "2020-01-06T02:38:50+00:00"
         },
         {
             "name": "laravelha/preset-web",

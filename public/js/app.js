@@ -58719,8 +58719,8 @@ __webpack_require__(/*! datatables.net-bs4 */ "./node_modules/datatables.net-bs4
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/pedro/dev/ha/test-web/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/pedro/dev/ha/test-web/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /home/pedro/dev/ha/poc-web/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /home/pedro/dev/ha/poc-web/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
