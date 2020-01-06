@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2bf1601c0e8136cf92250c3c3f88ceed",
+    "content-hash": "429f400ab11e4f0f4195867ed2b38fb1",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -3473,71 +3473,81 @@
             "time": "2019-10-12T03:32:17+00:00"
         },
         {
-            "name": "laravelha/generator",
-            "version": "1.0.2",
+            "name": "laravel/ui",
+            "version": "v1.1.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravelha/generator.git",
-                "reference": "1b3b6dcfcb3bc505d16a59644a59e39207121437"
+                "url": "https://github.com/laravel/ui.git",
+                "reference": "0287d4eee80aad718bdf7f90117cfe720c493064"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravelha/generator/zipball/1b3b6dcfcb3bc505d16a59644a59e39207121437",
-                "reference": "1b3b6dcfcb3bc505d16a59644a59e39207121437",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/0287d4eee80aad718bdf7f90117cfe720c493064",
+                "reference": "0287d4eee80aad718bdf7f90117cfe720c493064",
                 "shasum": ""
             },
             "require": {
-                "illuminate/console": "^6.0",
-                "illuminate/filesystem": "^6.0",
-                "illuminate/support": "^6.0",
-                "laravelha/support": "^1.0.0"
+                "illuminate/console": "~5.8|^6.0",
+                "illuminate/filesystem": "~5.8|^6.0",
+                "illuminate/support": "~5.8|^6.0",
+                "php": "^7.1.3"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^8.0"
             },
             "type": "library",
             "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                },
                 "laravel": {
                     "providers": [
-                        "Laravelha\\Generator\\GeneratorServiceProvider"
+                        "Laravel\\Ui\\UiServiceProvider"
                     ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Laravelha\\Generator\\": "src/"
+                    "Laravel\\Ui\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
-                    "name": "Pedro Augusto",
-                    "email": "pedro.e@ufv.br"
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
                 }
             ],
-            "description": "Laravelha Generator",
+            "description": "Laravel UI utilities and presets.",
             "keywords": [
-                "generator",
                 "laravel",
-                "rad"
+                "ui"
             ],
-            "time": "2020-01-05T22:42:43+00:00"
+            "time": "2019-12-20T15:09:01+00:00"
         },
         {
             "name": "laravelha/preset-web",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravelha/preset-web.git",
-                "reference": "4bc7007b7610bef044dd7dd538ede61de8eb1857"
+                "reference": "cbe992f6fd0cc6e8f0dfa22290df053acaf02fda"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravelha/preset-web/zipball/4bc7007b7610bef044dd7dd538ede61de8eb1857",
-                "reference": "4bc7007b7610bef044dd7dd538ede61de8eb1857",
+                "url": "https://api.github.com/repos/laravelha/preset-web/zipball/cbe992f6fd0cc6e8f0dfa22290df053acaf02fda",
+                "reference": "cbe992f6fd0cc6e8f0dfa22290df053acaf02fda",
                 "shasum": ""
             },
             "require": {
                 "davejamesmiller/laravel-breadcrumbs": "5.x",
                 "hieu-le/active": "^4.0",
                 "illuminate/support": "^6.0",
+                "laravel/ui": "^1.1",
                 "laravelha/support": "^1.0.0",
                 "yajra/laravel-datatables-oracle": "9.7.2"
             },
@@ -3570,25 +3580,24 @@
                 "preset",
                 "web"
             ],
-            "time": "2020-01-05T21:09:00+00:00"
+            "time": "2020-01-06T02:37:08+00:00"
         },
         {
             "name": "laravelha/support",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravelha/support.git",
-                "reference": "cb3fa2d267355767373fc2a2726e73890b0886fa"
+                "reference": "3dbb4b693195ca757523473409759c9e292e3e41"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravelha/support/zipball/cb3fa2d267355767373fc2a2726e73890b0886fa",
-                "reference": "cb3fa2d267355767373fc2a2726e73890b0886fa",
+                "url": "https://api.github.com/repos/laravelha/support/zipball/3dbb4b693195ca757523473409759c9e292e3e41",
+                "reference": "3dbb4b693195ca757523473409759c9e292e3e41",
                 "shasum": ""
             },
             "require": {
-                "illuminate/support": "^6.0",
-                "yajra/laravel-datatables-oracle": "9.7.2"
+                "illuminate/support": "^6.0"
             },
             "type": "library",
             "autoload": {
@@ -3597,6 +3606,9 @@
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Pedro Augusto",
@@ -3609,7 +3621,7 @@
                 "laravel",
                 "support"
             ],
-            "time": "2020-01-05T00:47:20+00:00"
+            "time": "2020-01-05T23:27:18+00:00"
         },
         {
             "name": "mockery/mockery",
