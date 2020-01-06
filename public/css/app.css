@@ -11822,3 +11822,7 @@ a.text-dark:focus {
   background-color: transparent;
 }
 
+.table-responsive {
+  overflow: hidden;
+}
+

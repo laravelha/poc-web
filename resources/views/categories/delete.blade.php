@@ -23,14 +23,14 @@
                             @endforeach
                         </dl>
                     </div>
-                </div>
-                <div class="form-group">
-                    <form action="{{ route('categories.destroy', ['category' => $category]) }}" method="post" name="delete">
-                        @method('delete')
-                        @csrf
-                        <button type="button" class="btn btn-outline-dark" onclick="location.href='{{ route('categories.show', ['category' => $category]) }}'">@lang('app.cancel')</button>
-                        <button type="submit" class="btn btn-primary">@lang('app.delete')</button>
-                    </form>
+                    <div class="form-group">
+                        <form action="{{ route('categories.destroy', ['category' => $category]) }}" method="post" name="delete">
+                            @method('delete')
+                            @csrf
+                            <button type="button" class="btn btn-outline-dark" onclick="location.href='{{ route('categories.show', ['category' => $category]) }}'">@lang('app.cancel')</button>
+                            <button type="submit" class="btn btn-primary">@lang('app.delete')</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
